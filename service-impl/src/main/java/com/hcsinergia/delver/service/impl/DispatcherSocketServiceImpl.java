@@ -41,9 +41,7 @@ public class DispatcherSocketServiceImpl implements DispatcherSocketService {
 	 */
 	@Override
 	public String processRequestClient(String input) {
-		if (Calendar.getInstance().getTime().after(new Date("03/20/2015"))) {
-			return "Trial has expired";
-		}
+
 		DatoCrudo datoCrudo = new DatoCrudo();
 		try {
 			logger.info("Dato recibido: " + input);
